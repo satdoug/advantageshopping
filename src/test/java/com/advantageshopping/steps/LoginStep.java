@@ -4,7 +4,6 @@ import com.advantageshopping.data.UsuarioDataFactory;
 import com.advantageshopping.model.Usuario;
 import com.advantageshopping.pages.HomePage;
 import com.advantageshopping.pages.LoginPage;
-import com.advantageshopping.test.BaseWeb;
 import io.cucumber.java.pt.Dado;
 import io.cucumber.java.pt.E;
 import io.cucumber.java.pt.Entao;
@@ -12,12 +11,12 @@ import io.cucumber.java.pt.Quando;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 
-public class LoginStep extends BaseWeb {
+public class LoginStep {
 
     private Usuario novoUsuario;
     private LoginPage loginPage;
     private HomePage homePage;
-    private static WebDriver driver;
+    public static WebDriver driver;
 
     public LoginStep() {
         novoUsuario = new UsuarioDataFactory().criarUsuario();

@@ -1,0 +1,72 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "start_timestamp": "2021-05-24T12:39:52.541Z",
+        "line": 5,
+        "name": "Cadastrar novo Usuario",
+        "description": "",
+        "id": "logar-loja-advantage;cadastrar-novo-usuario",
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\r\n\tat com.advantageshopping.pages.HomePage.pegarNomeIcone(HomePage.java:34)\r\n\tat com.advantageshopping.steps.LoginStep.queEstouNoSiteDaLoja(LoginStep.java:29)\r\n\tat ✽.que estou no site da loja(file:///D:/Cursos,%20Livros,%20Eventos%20e%20outros/Códigos%20de%20Teste/Java/AdvantageShopping/src/test/resources/features/Login.feature:6)\r\n",
+              "duration": 34016460200,
+              "status": "failed"
+            },
+            "line": 6,
+            "name": "que estou no site da loja",
+            "match": {
+              "location": "com.advantageshopping.steps.LoginStep.queEstouNoSiteDaLoja()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "estou na tela de cadastrar novo usuario",
+            "match": {
+              "location": "com.advantageshopping.steps.LoginStep.estouNaTelaDeCadastrarNovoUsuario()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 997100,
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "clicar no botao register",
+            "match": {
+              "location": "com.advantageshopping.steps.LoginStep.clicarNoBotaoRegister()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 1004900,
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "devera ser redirecionado para tela home",
+            "match": {
+              "location": "com.advantageshopping.steps.LoginStep.deveraSerRedirecionadoParaTelaHome()"
+            },
+            "keyword": "Entao "
+          }
+        ]
+      }
+    ],
+    "name": "Logar Loja Advantage",
+    "description": "",
+    "id": "logar-loja-advantage",
+    "keyword": "Funcionalidade",
+    "uri": "file:src/test/resources/features/Login.feature",
+    "tags": []
+  }
+]
