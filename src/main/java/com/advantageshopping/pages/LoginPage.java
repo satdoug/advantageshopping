@@ -3,60 +3,62 @@ package com.advantageshopping.pages;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
 public class LoginPage {
 
-//    private WebDriver driver;
-//
-//    public LoginPage(WebDriver driver) {
-//        this.driver = driver;
-//    }
+    public final WebDriver driver;
+
+    public LoginPage(WebDriver driver) {
+        this.driver = driver;
+        PageFactory.initElements(driver, this);
+    }
 
     @FindBy(name = "usernameRegisterPage")
-    private WebElement inputUserName;
+    public WebElement inputUserName;
 
     @FindBy(name = "emailRegisterPage")
-    private WebElement inputEmail;
+    public WebElement inputEmail;
 
     @FindBy(name = "passwordRegisterPage")
-    private WebElement inputPassword;
+    public WebElement inputPassword;
 
     @FindBy(name = "confirm_passwordRegisterPage")
-    private WebElement inputConfirmPassword;
+    public WebElement inputConfirmPassword;
 
     @FindBy(name = "first_nameRegisterPage")
-    private WebElement inputFirstName;
+    public WebElement inputFirstName;
 
     @FindBy(name = "last_nameRegisterPage")
-    private WebElement inputLastName;
+    public WebElement inputLastName;
 
     @FindBy(name = "phone_numberRegisterPage")
-    private WebElement inputPhone;
+    public WebElement inputPhone;
 
     @FindBy(name = "countryListboxRegisterPage")
-    private WebElement selectCountry;
+    public WebElement selectCountry;
 
     @FindBy(name = "cityRegisterPage")
-    private WebElement inputCity;
+    public WebElement inputCity;
 
     @FindBy(name = "addressRegisterPage")
-    private WebElement inputAddress;
+    public WebElement inputAddress;
 
     @FindBy(name = "state_/_province_/_regionRegisterPage")
-    private WebElement inputState;
+    public WebElement inputState;
 
     @FindBy(name = "postal_codeRegisterPage")
-    private WebElement inputPostalCode;
+    public WebElement inputPostalCode;
 
     @FindBy(name = "allowOffersPromotion")
-    private WebElement checkPromotions;
+    public WebElement checkPromotions;
 
     @FindBy(className = "checkboxText")
-    private WebElement checkAgree;
+    public WebElement checkAgree;
 
     @FindBy(id = "register_btnundefined")
-    private WebElement buttonRegister;
+    public WebElement buttonRegister;
 
     public void preencherUserName(String userName) {
         this.inputUserName.sendKeys(userName);

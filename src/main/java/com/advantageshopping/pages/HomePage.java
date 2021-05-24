@@ -3,23 +3,25 @@ package com.advantageshopping.pages;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 public class HomePage {
 
-    private WebDriver driver;
+    public final WebDriver driver;
 
     public HomePage(WebDriver driver){
         this.driver = driver;
+        PageFactory.initElements(driver, this);
     }
 
     @FindBy(id = "menuUserLink")
-    private WebElement botaoUsuario;
+    public WebElement botaoUsuario;
 
     @FindBy(className = "create-new-account")
-    private WebElement botaoCriarCadastro;
+    public WebElement botaoCriarCadastro;
 
     @FindBy(className = "roboto-medium")
-    private WebElement homeIcone;
+    public WebElement homeIcone;
 
     public HomePage clicarBotaoUsuario(){
         this.botaoUsuario.click();
