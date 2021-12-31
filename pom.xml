@@ -25,7 +25,7 @@
         <cucumber.version>6.1.2</cucumber.version>
         <lombok.version>1.18.20</lombok.version>
         <javafaker.version>1.0.2</javafaker.version>
-        <log4j.version>2.14.1</log4j.version>
+        <log4j.version>2.16.0</log4j.version>
         <allure.version>2.13.5</allure.version>
         <allure-maven.version>2.10.0</allure-maven.version>
         <allure-environment-writer.version>1.0.0</allure-environment-writer.version>
